@@ -21,6 +21,16 @@
 <body>
 	<%
 		PrintWriter script = response.getWriter();
+		String userID = null;
+		if(session.getAttribute("userID") !=null){
+			userID = (String)session.getAttribute("userID");
+		}
+		if(userID !=null){
+			script.println("<script>");
+			script.println("alert('이미 로그인이 되어있습니다.')");
+			script.println("location.href='main.jsp'");
+			script.println("</script>");
+		}
 		System.out.println("check1");
 		if(user.getUserID() == null || user.getUserEmail()== null || user.getUserGender() == null ||
 		user.getUserName() == null || user.getUserPassword() == null){
@@ -43,6 +53,7 @@
 			}
 			else{
 				System.out.println("check5");
+				session.setAttribute("userID", user.getUserID());
 				script.println("<script>");
 				script.println("location.href='main.jsp'");
 				script.println("</script>");
