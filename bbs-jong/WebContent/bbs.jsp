@@ -84,5 +84,8 @@
     </tr>
   </tbody>
 </table>
+	<div class="text-right">
+		<a href="write.jsp" class="btn btn-primary">±Û¾²±â</a>
+	</div>
 	</body>
 	</html>
