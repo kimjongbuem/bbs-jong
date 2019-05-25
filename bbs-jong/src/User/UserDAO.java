@@ -42,4 +42,20 @@ public class UserDAO {
 		}
 		return DatabaseState.ERR; // 디비오류
 	}
+	public int join(User user) {
+		String SQL = "INSERT INTO USER VALUES (?,?,?,?,?)";
+		try {
+			pstmt = conn.prepareStatement(SQL); // sqL문장을 넣는다.
+			pstmt.setString(1, user.getUserID()); // 필요한 값지정. ? 1~5번째 값에다가 값을 넣는다.
+			pstmt.setString(2, user.getUserPassword());
+			pstmt.setString(3, user.getUserName());
+			pstmt.setString(4, user.getUserGender());
+			pstmt.setString(5, user.getUserEmail());
+		return pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println("회원가입 페이지에서 디비가 작동을 안합니다.");
+		}
+		return -1;
+	}
 }
