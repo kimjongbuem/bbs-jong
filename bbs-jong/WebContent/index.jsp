@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>JSP 웹 게시판 사이트</title>
 </head>
 <body>
-헬로우
+	<script>
+		location.href='Login.jsp';
+	</script>
 </body>
 </html>
