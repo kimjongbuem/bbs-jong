@@ -91,10 +91,10 @@
     </div>
   </div>
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span style="margin-top: 168px;color:blue"class="glyphicon glyphicon-arrow-left" aria-hidden="false"></span>
+    <span style="margin-top: 168px;color:#40D23E"class="glyphicon glyphicon-menu-left" aria-hidden="false"></span>
   </a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span style="margin-top: 168px; color:blue" class="glyphicon glyphicon-arrow-right" aria-hidden="false"></span>
+   	<span style="margin-top: 168px; color:#40D23E;" class="glyphicon glyphicon-menu-right" aria-hidden="false"></span>
   </a>
 </div>
 </div>
