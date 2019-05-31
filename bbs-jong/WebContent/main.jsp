@@ -10,7 +10,6 @@
 	<script src="js/bootstrap.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
 	<%
